@@ -3,7 +3,7 @@ data:
   nginx-basic.conf: |
     server {
         location / {
-            return 200 'Eureka!';
+            return 200 'Eureka PICO!';
             add_header Content-Type text/plain;
         }
     }
