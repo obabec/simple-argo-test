@@ -6,6 +6,6 @@ spec:
   selector:
     app: nginx
   ports:
-    - port: 477
-      targetPort: 80
+    - port: 90
+      targetPort: 999
   type: LoadBalancer
