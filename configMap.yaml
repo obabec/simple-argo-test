@@ -1,0 +1,13 @@
+apiVersion: v1
+data:
+  nginx-basic.conf: |
+    server {
+        location / {
+            return 200 'Eureka!';
+            add_header Content-Type text/plain;
+        }
+    }
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: basic-config

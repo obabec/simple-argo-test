@@ -19,3 +19,10 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
+        volumeMounts:
+        - name: basic-config
+          mountPath: /etc/nginx/conf.d
+      volumes:
+        - name: basic-config
+          configMap:
+            name: basic-config
